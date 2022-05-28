@@ -1,0 +1,12 @@
+# Eureka server is using different port insteadoff default 8761 for testing purpose.
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    #preferIpAddress: true
+    hostname: localhost
