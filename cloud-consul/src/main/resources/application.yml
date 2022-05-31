@@ -1,0 +1,12 @@
+server:
+  port: 9494
+
+spring:
+  application:
+    name: cloud-consul
+  cloud:
+    consul:
+      config:
+        fail-fast: true
+      host: localhost
+      port: 8500

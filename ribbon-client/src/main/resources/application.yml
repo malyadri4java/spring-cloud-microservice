@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ribbon-client
+server:
+  port: 9000
+
+# If you want to use without eureka then un comment it.
+send-req-to-server:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:9001,localhost:9002
+    ServerListRefreshInterval: 2000

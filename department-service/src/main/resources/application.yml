@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: department-service
+  boot:
+    admin:
+      client:
+        url: http://localhost:9494
+server:
+  port: 9001
+  servlet:
+    context-path: /department
+
+info:
+  app:
+    name: Spring Boot Department Service Application
+    description: This is my first spring boot application
+    version: 1.0.0

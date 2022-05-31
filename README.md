@@ -40,7 +40,10 @@ Sleuth & Zipkin:
     curl -sSL https://zipkin.io/quickstart.sh | bash -s
     java -jar zipkin.jar
 2. add sleuth & zipkin dependencies
-3. 
+
+Admin Server:
+    http://localhost:9494/applications
+    This will register all application and you can track all application status and health in single place.
 
 user will fetch department from user service based on userId.
 Internally it will use rest template and invoke the url: http://localhost:9001/departments/%d
